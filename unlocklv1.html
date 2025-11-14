@@ -1,0 +1,240 @@
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<script>
+    let check1 = false
+    let linkfile = ''
+    let _link = ''
+    let linkSubscribe = ''
+    function getLink(e) {
+        let url = window.location.href
+        let urlParams =  new URLSearchParams(location.search)
+        let id = urlParams.get('id')
+        $('#loading').hide()
+        $('#loader').show()
+        setTimeout(() => {
+            $('#loader').hide()
+            $('#checked').show()
+            let check = _link
+            let url = ''
+            if (check) {
+                $('#_like').css('background','right, rgba(253, 130, 86, 1), rgba(247, 75, 98, 1)')
+                $('#_like').attr("href", _link)
+            } else {
+                url = 'https://sub2sunlock.blogspot.com/2025/06/unlock-lever-2.html' + '?check-url=true&id='+id
+                $('#get-link').css('background','#4CAF50')
+                $('#get-link').attr("href", url)
+            }
+            check1 = true
+        }, 4000);
+    }
+
+    function getLinkAdd() {
+        if (check1) {
+            let url = window.location.href
+            let urlParams =  new URLSearchParams(location.search)
+            let id = urlParams.get('id')
+            $('#_loading').hide()
+            $('#_loader').show()
+            setTimeout(() => {
+                $('#_loader').hide()
+                $('#_checked').show()
+                $('#get-link').css('background','#4CAF50')
+                let url = ''
+                url = 'https://sub2sunlock.blogspot.com/2025/06/unlock-lever-2.html' + '?check-url=true&id='+id
+                $('#get-link').attr("href", url)
+            }, 4000);
+        }
+    }
+    $(document).ready(function () {
+        function initData() {
+            let url = window.location.href
+            let urlParams = new URLSearchParams(location.search)
+            let id = urlParams.get('id')
+            $.ajax({
+                url: 'https://sub2s.com/getlink?id=' + id,
+                type: 'GET',
+                success: function (d) {
+                    const dat = d.data
+                    console.log(dat)
+                    linkfile = dat.linkfile
+                    linkSubscribe = dat.linkyoutube
+                    _link = dat._link
+                    if (!_link) {
+                        console.log(_link,'fggggggg')
+                        $('#_like').hide()
+                    }
+                    $('#subscribe').attr('href', linkSubscribe)
+                },
+                error: function (e) {
+                  console.log(e, 'fdfdf')
+                }
+            })
+            
+        }
+        initData();
+    })
+
+</script>
+<script src="https://sub2s.com/js/checks1.js"></script>
+<div class="wrapper">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.5.0/css/all.min.css" rel="stylesheet"></link>
+    <style>
+        .allbutton {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .loader {
+            width: 15px;
+            height: 15px;
+            border: 5px solid #FFF;
+            border-bottom-color: #FF3D00;
+            border-radius: 50%;
+            display: inline-block;
+            box-sizing: border-box;
+            animation: rotation 1s linear infinite;
+        }
+
+        @keyframes rotation {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .step {
+            height: 80px;
+            width: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px;
+            color: #FFF;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+
+        .subscribe {
+            background: -webkit-linear-gradient(right, rgba(253, 130, 86, 1), rgba(247, 75, 98, 1));
+            font-size: 24px;
+            display: flex; 
+            align-items: center; 
+        }
+
+        .like {
+            background: -webkit-linear-gradient(right, rgba(253, 130, 86, 1), rgba(247, 75, 98, 1));
+            font-size: 24px;
+            display: flex; 
+            align-items: center;
+        }
+
+        .unlock {
+            background: #E91E63;
+            font-size: 24px;
+            display: flex; 
+            align-items: center; 
+        }
+
+        .step i {
+            color: #FFF;
+            font-size: 24px;
+        }
+        .texttl{
+            color: #E91E63;
+            font-weight: bold;
+            display: flex;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            text-align: center;
+            height: 15vh;
+            margin-top: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .gach {
+            border: 2px solid #1ea9e9; 
+            width: 60%;
+        }
+    </style>
+
+
+
+
+    <div class="allbutton"> 
+        
+    <div class="texttl">
+        <strong>B?M T?NG BU?C</strong>
+          
+    </div>
+    <hr class="gach" />
+      <style>
+           .subscribe2 {
+            background: -webkit-linear-gradient(right, rgba(253, 130, 86, 1), rgba(247, 75, 98, 1));
+            font-size: 24px;
+            display: flex; 
+            align-items: center; 
+        }
+    </style>
+<a class="step subscribe2 linky buttonpanel buttonpanel-block btn-lg locked-action-link" 
+   id="subscribe2" rel="noopener" target="_blank"  href="https://www.profitableratecpm.com/spimykjx1?key=d98a214eeb37bfadf4fb5051e3c725f6">
+    <span class="subtlepanel">
+        <i class="fab fa-youtube"></i>
+    </span>
+    <span>CMT</span>
+    <div class="loading"></div>
+    <span class="loader" style="display: none;"></span>
+    <span class="checked" style="display: none;">
+        <i aria-hidden="true" class="fa fa-check" style="visibility: visible;"></i>
+    </span>
+</a>
+
+<script>
+document.getElementById('subscribe2').addEventListener('click', function(e) {
+    const el = this;
+
+    el.querySelector('.loader').style.display = 'inline-block';
+    el.querySelector('.checked').style.display = 'none';
+
+    setTimeout(function() {
+        el.querySelector('.loader').style.display = 'none';
+        el.querySelector('.checked').style.display = 'inline-block';
+    }, 5000);
+});
+</script>
+        <a class="step subscribe linky buttonpanel buttonpanel-block btn-lg locked-action-link" id="subscribe" onclick="getLink(this)" rel="noopener" target="_blank" type="button">
+            <span class="subtlepanel">
+                <i class="fab fa-youtube" id="resp2"></i>
+            </span>
+            <span>SUBSCRIBER</span>
+            <div id="loading"></div>
+            <span class="loader" id="loader" style="display: none;"></span>
+            <span id="checked" style="display: none;">
+                <i aria-hidden="true" class="fa fa-check" id="resp1" style="visibility: visible;"></i>
+            </span>
+        </a>
+        <a class="step like linky buttonpanel buttonpanel-block btn-lg locked-action-link" id="_like" onclick="getLinkAdd()" rel="noopener" target="_blank" type="button">
+            <span class="subtlepanel">
+                <i class="fab fa-youtube" id="resp2"></i>
+            </span>
+            <span>LIKE</span>
+            <div id="_loading"></div>
+            <span class="loader" id="_loader" style="display: none;"></span>
+            <span id="_checked" style="display: none;">
+                <i aria-hidden="true" class="fa fa-check" id="resp1" style="visibility: visible;"></i>
+            </span>
+        </a>
+        <a class="step unlock linky buttonpanel buttonpanel-block btn-lg locked-action-link" id="get-link" rel="noopener" target="_blank" type="button">
+            <span class="subtlepanel">
+                <i aria-hidden="true" class="fa fa-icon fa-unlock"></i>
+            </span>
+            <span>UNLOCK</span>
+            <div></div> 
+        </a>
+        <hr class="gach" />
+    </div>
+</div>
+
+ 
